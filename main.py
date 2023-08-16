@@ -7,6 +7,7 @@ grid = [[" 00", " 01", " 02", " 03"],
         [" 10", " 11", " 12", " 13"],
         [" 20", " 21", " 22", " 23"],
         [" 30", " 31", " 32", " 33"]]
+buttonList = []
 
 
 def getTeamHistory(p_id):
@@ -89,7 +90,7 @@ def createTkGrid():
             c = c + 1
 
     # select buttons
-    buttonList = []
+    global buttonList
     global selected
     selected = tk.IntVar()
     for i in range(1, 10):
@@ -125,12 +126,20 @@ def getCoord():
     while column > 3:
         column = column - 3
         row = row + 1
+
     return row, column
 
 
-def handleResult(success):
+def removeField(row, column):
+    bPos = row * 3 + column - 4
+    print(bPos)
+    buttonList[bPos].destroy()
+
+
+def handleResult(success, row, column):
     if success:
         print("success")
+        removeField(row, column)
     else:
         print("no success")
 
@@ -145,11 +154,10 @@ def submitPlayer():
         if column == 0:
             print("No field selected!")
         else:
-            handleResult(checkPT(playerInf, row, column))
+            handleResult(checkPT(playerInf, row, column), row, column)
     else:
         print("No Player!")
 
 
 if __name__ == '__main__':
-    print(getPlayer("Victor oladipo")[2])
     createTkGrid()
