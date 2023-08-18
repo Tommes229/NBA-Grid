@@ -1,6 +1,17 @@
 ﻿import random
 from nba_api.stats.endpoints import playercareerstats, CommonPlayerInfo, CommonAllPlayers
 import tkinter as tk
+import eel
+
+eel.init("web")
+
+
+@eel.expose
+def one_number():
+    return 3
+
+
+eel.start("main.html")
 
 teams = []
 grid = [[" 00", " 01", " 02", " 03"],
@@ -157,7 +168,3 @@ def submitPlayer():
             handleResult(checkPT(playerInf, row, column), row, column)
     else:
         print("No Player!")
-
-
-if __name__ == '__main__':
-    createTkGrid()

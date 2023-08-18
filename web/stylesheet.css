@@ -47,13 +47,14 @@ body {
 /* make grid container*/
 .grid_container {
     display: grid;
-    grid-template-areas: 
-        "a b c"
-        "d e f"
-        "g h i";
+    grid-template-areas:
+        "0 x y z"
+        "u a b c"
+        "v d e f"
+        "w g h i";
     gap: 10px;
-    grid-template-columns: repeat(3, 155px);
-    grid-template-rows: repeat(3, 155px);
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: repeat(4, 160px);
     inline-size: 500px;
 }
 

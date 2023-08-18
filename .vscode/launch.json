@@ -5,11 +5,14 @@
     "version": "0.2.0",
     "configurations": [
 
+
+
+
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch in chrome",
-            "file": "${workspaceFolder}/frontend.html"
+            "file": "${workspaceFolder}/web/main.html"
         }
     ]
 }
