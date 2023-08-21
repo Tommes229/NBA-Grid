@@ -1,0 +1,98 @@
+h1  {
+    color: rgb(240, 240, 240);
+    font-size: 1em;
+    margin-bottom: .3em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #221f1f;
+}
+
+.topnav input[type=text] {
+    float: left;
+    text-align: left;
+    padding: 7px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.topnav input[type=text] {    
+    border: 1px solid #ccc;
+}
+
+/* Hide Radiobuttons */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Image Style */
+[type=radio] + img {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+/* Checked Style*/
+[type=radio]:checked + img {
+    outline: 5px solid rgb(161, 0, 0)
+}
+
+/* make grid container*/
+.grid_container {
+    display: grid;
+    grid-template-areas:
+        "0 x y z"
+        "u a b c"
+        "v d e f"
+        "w g h i";
+    gap: 10px;
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: repeat(4, 160px);
+    inline-size: 500px;
+}
+
+
+
+
+.grid_item1 {
+    grid-area: a;
+}
+
+.grid_item2 {
+    grid-area: b;
+}
+
+.grid_item3 {
+    grid-area: c;
+}
+
+.grid_item4 {
+    grid-area: d;
+}
+
+.grid_item5 {
+    grid-area: e;
+}
+
+.grid_item6 {
+    grid-area: f;
+}
+
+.grid_item7 {
+    grid-area: g;
+}
+
+.grid_item8 {
+    grid-area: h;
+}
+
+.grid_item9 {
+    grid-area: i;
+}
