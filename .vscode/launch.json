@@ -9,6 +9,10 @@
 
 
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch in chrome",
+            "file": "${workspaceFolder}/web/main.html"
         }
     ]
 }

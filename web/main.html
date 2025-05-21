@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NBA - Grid</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NBA-Grid Game</h1>
+            <p>Select a grid cell and enter a player who played for both teams</p>
+        </div>
+        
+        <div id="message" class="message"></div>
+        
+        <div class="search-container">
+            <input type="text" id="playerSearch" placeholder="Enter player name...">
+            <button id="searchButton">Submit</button>
+        </div>
+        
+        <div class="grid_container">
+            <!-- Empty top-left corner -->
+            <div class="grid_header empty"></div>
+            
+            <!-- Column headers -->
+            <div class="grid_header team-header" id="team-col-1">Team 1</div>
+            <div class="grid_header team-header" id="team-col-2">Team 2</div>
+            <div class="grid_header team-header" id="team-col-3">Team 3</div>
+            
+            <!-- Row 1 -->
+            <div class="grid_header team-header" id="team-row-1">Team 4</div>
+            <div class="grid_item grid_item1">
+                <label>
+                    <input type="radio" id="1" name="player_select" value="1">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item2">
+                <label>
+                    <input type="radio" id="2" name="player_select" value="2">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item3">
+                <label>
+                    <input type="radio" id="3" name="player_select" value="3">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="grid_header team-header" id="team-row-2">Team 5</div>
+            <div class="grid_item grid_item4">
+                <label>
+                    <input type="radio" id="4" name="player_select" value="4">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item5">
+                <label>
+                    <input type="radio" id="5" name="player_select" value="5">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item6">
+                <label>
+                    <input type="radio" id="6" name="player_select" value="6">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="grid_header team-header" id="team-row-3">Team 6</div>
+            <div class="grid_item grid_item7">
+                <label>
+                    <input type="radio" id="7" name="player_select" value="7">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item8">
+                <label>
+                    <input type="radio" id="8" name="player_select" value="8">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            <div class="grid_item grid_item9">
+                <label>
+                    <input type="radio" id="9" name="player_select" value="9">
+                    <img src="images/black_square.png" alt="Grid Cell">
+                </label>
+            </div>
+            
+            <button id="resetButton">Reset</button>
+
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
