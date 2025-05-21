@@ -1,6 +1,6 @@
 # NBA Team Grid Player Guess
 
-A Python (Eel) web project: guess a player who has played for both teams shown in the NBA grid row and column!
+A Python ([Eel](https://github.com/python-eel/Eel)) web project: guess a player who has played for both teams shown in the NBA grid row and column!
 
 ## Features
 
